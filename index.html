@@ -32,16 +32,31 @@
     </form>
   </header>
 
+  <div class="task-action">
+    <button class="brn edit-btn" data-task-id="5">Edit</button>
+    <button class="btn delete-btn" data-task-id="5">delete</button>
+  </div>
+
   <main class="page-content">
     <section class="task-list-wrapper">
       <h2 class="list-title">
           Tasks To Do
         </h2>
       <ul class="task-list" id="tasks-to-do">
-        <li class="task-item">
+        <li class="task-item" data-task-id="0">
             A task is going to be added soon!
         </li>
       </ul>
+    </section>
+
+    <section class="task-list-wrapper">
+      <h2 class="list-title">Tasks in Progress</h2>
+      <ul class="task-list" id="task-in-progress"></ul>
+    </section>
+
+    <section class="task-list-wrapper">
+    <h2 class="list-title">Tasks Completed</h2>
+    <ul class="task-list" id="tasks-completed"></ul>
     </section>
   </main>
 
